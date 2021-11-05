@@ -1,2 +1,0 @@
-# WdiditDeployment
- Proofreading and testing

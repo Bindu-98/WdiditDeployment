@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Meta Tags-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-----Icon----->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+  <!-----Title----->
+  <title>Licence Request</title>
+
+  <!-----Font Poppins----->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-----Font Icons----->
+  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+
+
+  <!-----Custom CSS----->
+  <link rel="stylesheet" href="asset/form.css" />
+  <link rel="stylesheet" href="asset/nav.css" />
+  <link rel="stylesheet" href="asset/footer.css">
+
+
+  <!-- Java Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="javascript/nav.js"></script>
+
+</head>
+
+<body>
+  <!--------------------------------------- Nav Bar and Side Menu -------------------------------------->
+  <div id="nav-placeholder">
+    <main class="main">
+      <header class="header">
+        <div class="wrap d-flex">
+          <h1 class="logo">
+            <a href="index.html"><img src="images/Asset 21.png" alt="" /></a>
+          </h1>
+
+          <nav class="menu stroke">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tracks.html">Music Catalogue</a></li>
+              <li><a href="members.html">Our Members</a></li>
+              <li><a href="new_gallery.html"> Gallery</a></li>
+              <div class="dropdown">
+                <li><a class="dropbtn"> Forms <i class="fa fa-angle-down" aria-hidden="true"></i> </a></li>
+
+                <div class="dropdown-content">
+                  <a href="signupfoam.html">Membership Request</a>
+                  <a href="licence_request_form.html">Licence Request</a>
+                  <a href="report_form.html">Report Infringement</a>
+                </div>
+              </div>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="our_team_sri_lanka.html">Our Team</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <a href="javascript:void(0);" class="sidemenu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+
+        <div class="sidemenu">
+          <a href="javascript:void(0);" class="close"></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tracks.html">Music Catalog</a></li>
+              <li><a href="members.html">Our Members</a></li>
+              <li><a href="new_gallery.html"> Gallery</a></li>
+
+
+
+
+          </nav>
+
+          <div class="dropdown-side">
+            <li><a class="dropbtn-side"> Forms </a></li>
+            <div class="dropdown-content-side">
+              <a href="signupfoam.html">Membership Request</a>
+              <a href="licence_request_form.html">Licence Request</a>
+              <a href="report_form.html">Report Infringement</a>
+            </div>
+          </div>
+
+          <nav>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="our_team_sri_lanka.html">Our Team</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <div class="social">
+            <a href="https://www.youtube.com/c/WeDidItMusic"><img src="images/facebook.png" alt="" /></a>
+            <a href="https://twitter.com/wediditglobal"><img src="images/twitter.png" alt="" /></a>
+            <a href="https://www.instagram.com/wediditglobal.music"><img src="images/instagram.png" alt="" /></a>
+          </div>
+          <p><i class="fa fa-copyright"></i> 2020-2021, We Did It Global</p>
+        </div>
+      </header>
+    </main>
+  </div>
+  <!--NAV and Sidebar End-->
+  <div class="form-container">
+    <div class="wrapper">
+      <div class="title">Request <br />Copyright Licence</div>
+
+      <div class="licence-request-form">
+        <div class="form">
+          <div class="inputfield">
+            <label>Full Name</label>
+            <input type="text" class="input licence-form-Name" id="inputfield-fullName" />
+          </div>
+          <div class="inputfield">
+            <label>Company</label>
+            <input type="text" class="input licence-form-Company" id="inputfield-company" />
+          </div>
+          <div class="inputfield">
+            <label>Contact Number </label>
+            <input type="text" class="input licence-form-Contact" id="inputfield-contactNumber" />
+          </div>
+
+          <div class="inputfield">
+            <label>Email Address</label>
+            <input type="email" class="input licence-form-Email" id="inputfield-email" />
+          </div>
+
+          <div class="inputfield">
+            <label>Media Type</label>
+            <div class="custom_select">
+              <select class="" id="inputfield-mediaType">
+                <option value="Advertisement">Advertisement</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Flim">Flim</option>
+                <option value="Game">Game</option>
+                <option value="Merchandise">Merchandise</option>
+                <option value="Online">Online</option>
+                <option value="Print">Print</option>
+                <option value="Radio">Radio</option>
+                <option value="Trailers">Trailers</option>
+                <option value="TV">TV</option>
+                <option value="TV Promo">TV Promo</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputfield">
+            <label>Song Title</label>
+            <input type="text" class="input licence-form-SongTitle" id="inputfield-songTitle" />
+          </div>
+          <div class="inputfield">
+            <label>Song Writer/Artist</label>
+            <input type="text" class="input licence-form-SongWriter" id="inputfield-artist" />
+          </div>
+          <div class="inputfield">
+            <label>Production Name</label>
+            <input type="text" class="input licence-form-Production" id="inputfield-productionName" />
+          </div>
+
+          <div class="inputfield">
+            <label>Licence Duration</label>
+            <select class="inputfield-licenceDuration custom_select" id="inputfield-licenceDuration">
+              <option value="3 Months">3 Months</option>
+              <option value="1 Year">1 Year</option>
+              <option value="2 Years">2 Years</option>
+              <option value="5 Years">5 Years</option>
+            </select>
+          </div>
+
+          <div class="inputfield">
+            <label>Territory</label>
+            <label><input type="radio" name="inputfield-territory" value="Sri Lanka">Sri Lanka</label>
+            <label><input type="radio" name="inputfield-territory" value="Worldwide">Worldwide</label>
+          </div>
+
+          <div class="inputfield">
+            <label>Additional Details</label>
+            <textarea type="text" class="input licence-form-Additional" id="inputfield-details">
+            </textarea>
+          </div>
+
+          <br /><br />
+          <div class="inputfield">
+            <input type="submit" value="submit" class="btn" id="copyrightLicenceRequest-submit-button" />
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------------------------------- Footer -------------------------------------->
+
+  <div id="footer-placeholder">
+    <footer>
+      <div class="rows">
+        <div class="cols">
+          <img src="images/logo.png" class="logo">
+          <p>Hello! We would love to hear from you.</p>
+        </div>
+        <div class="cols">
+          <h6>Location<div class="underline"></div>
+          </h6>
+          <p>181, High Level Rd</p>
+          <p>Maharagama,10280,Sri Lanka</p>
+          <p class="email-id">info@wediditglobal.com</p>
+          <p> GENERAL : (+94) 113 619 765</p>
+          <p> MOBILE : (+94) 76 538 7535</p>
+        </div>
+
+
+        <div class="cols">
+          <h6>Useful Links<div class="underline">
+          </h6>
+          <ul>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+            <li><a href="frequently_asked_questions.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="cols">
+          <h6>Newsletter<div class="underline">
+          </h6>
+          <form method="POST" class="Newsletter-Form">
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter Your Email id" class="N-email" required>
+            <button type="submit" value="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+
+          <div class="social-icons">
+            <i> <a href="https://www.facebook.com/wediditglobal" class="fab fa-facebook-f" target="_blank"></a></i>
+            <i><a href="https://twitter.com/wediditglobal" class="fab fa-twitter" target="_blank"></a></i>
+            <i> <a href="#" class="fab fa-pinterest -f" target="_blank"></a></i>
+            <i> <a href="https://www.instagram.com/wediditglobal.music" class="fab fa-instagram -f"
+                target="_blank"></a></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright © 2021 | WE DID IT GLOBAL - All Rights Reserved. Powered by
+        <a target="_blank" href="https://pearlbay.com/">Pearlbay Holdings</a>
+      </p>
+
+
+    </footer>
+  </div>
+  <!--Footer End-->
+</body>
+<script type="text/javascript" src="./javascript/copyrightLicenceRequest.js" defer></script>
+
+</html>
