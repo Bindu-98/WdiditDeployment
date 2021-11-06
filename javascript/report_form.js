@@ -38,6 +38,9 @@ $("#reportForm-submit-button").click(
                       console.log("Request Successfull")
                       $('#reportForm-submit-button').css('background-color', '#007A52')
                       $('#reportForm-submit-button').val('Request Sent ')
+                      
+                      $('.form').css('display', 'none')
+                      $('.title').text("Request Has Been Sent , We will contact you shortly")
       
                   }else{
                       console.log("Request Failed")

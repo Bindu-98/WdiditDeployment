@@ -3,6 +3,8 @@ function SongCataloguePage() {
   const [tracks, setTracks] = React.useState([]);
   const [searchKeyword, setSearchKeyword] = React.useState("");
 
+  const [helperText, setHelperText] = React.useState("Loading Please Wait...");
+
   const [songLimit , setSongLimit ]  = React.useState(100)
 
   React.useEffect(() => {
@@ -16,9 +18,14 @@ function SongCataloguePage() {
         tracks = JSON.parse(tracks)
 
         let filtered_tracks = tracks.filter((track) =>
-                track.Member1.toLowerCase().includes(searchKeyword.toLowerCase()) || track.Song_Name.toLowerCase().includes(searchKeyword.toLowerCase())
+                     track.Member1.toLowerCase().includes(searchKeyword.toLowerCase()) 
+                  || track.Song_Name.toLowerCase().includes(searchKeyword.toLowerCase())
+                  || track.Member2.toLowerCase().includes(searchKeyword.toLowerCase())
             );
-        
+        if(filtered_tracks.length <= 0 )
+        {
+          setHelperText("Results Could Not be Found, please try another keyword")
+        }
         setTracks(filtered_tracks)
       } catch (error) {
         console.log(error)
@@ -153,7 +160,7 @@ function SongCataloguePage() {
         //style = {songCardContainerStyles}
       >
        {
-          (trackComponents.length >= 1) ? trackComponents : <div> Songs Are Loading ...</div> 
+          (trackComponents.length >= 1) ? trackComponents : <div>{helperText}</div> 
         }
       </div>
       <button 
@@ -208,10 +215,12 @@ function TrackCard({
                 <h5 className="songCard__songName_text">{song_name}</h5>   
               </div>
               <div className="songCard__memberSection">
+                <h5 className="songCard__wdig_text--grey">Members</h5>
                 { (member_1 !== "") ? <h5 className="songCard__memberName_text">{member_1}</h5> : <></>  }
                 { (member_2 !== "") ? <h5 className="songCard__memberName_text">{member_2}</h5> : <></>  }    
               </div>
               <div className="songCard__contributerSection">
+                <h5 className="songCard__wdig_text--grey">Contributions</h5>
                 { (contributer_1 !== "") ? <h5 className="songCard__contributer_text" >{contributer_1}</h5> : <></>  }
                 { (contributer_2 !== "") ? <h5 className="songCard__contributer_text">{contributer_2}</h5> : <></>  }
                 { (contributer_3 !== "") ? <h5 className="songCard__contributer_text">{contributer_3}</h5> : <></>  }
@@ -220,6 +229,7 @@ function TrackCard({
         </div>
        <div className="songCard__icon">
           <img src = {imageSrc} className="songCard__icon__image"/>  
+            <h5 className="songCard__wdig_text">{`${percentage} Copyright`}</h5>   
        </div>
            
       <br />

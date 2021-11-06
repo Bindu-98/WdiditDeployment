@@ -75,7 +75,8 @@ $("#signupform-submit-button").click(() => {
                 console.log("Request Successfull")
                 $('#signupform-submit-button').css('background-color', '#007A52')
                 $('#signupform-submit-button').val('Request Sent ')
-
+                $('.form').css('display', 'none')
+                $('.title').text("Request Has Been Sent , We will contact you shortly")
             }else{
                 console.log("Request Failed")
                 $('#signupform-submit-button').val("Couldnt Send Your Request Please contact (+94) 113 619 765 ")

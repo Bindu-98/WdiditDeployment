@@ -26,7 +26,7 @@ nav.stroke ul li a {
   position: relative;
 }
 
-nav.stroke ul li a:after{
+nav.stroke ul li a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -231,12 +231,9 @@ nav ul li a:hover {
 
 /* Dropdown Button */
 .dropbtn {
-
   padding: 16px;
   border: none;
 }
-
-
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -295,23 +292,21 @@ nav ul li a:hover {
   width: 100%;
   display: none;
   position: absolute;
-  background-color: #2A0000;
+  background-color: #2a0000;
   min-width: 300px;
   box-shadow: 0 8px 10px 10px rgb(0 0 0 / 25%);
-
 }
 
 /* Links inside the dropdown */
 .dropdown-content-side a {
-padding: 15px;
-color: #ffffff;
+  padding: 15px;
+  color: #ffffff;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content-side a:hover {
-
   background-color: rgba(237, 41, 57, 1);
   letter-spacing: 0.5px;
 }
@@ -327,26 +322,35 @@ color: #ffffff;
   .header .sidemenu {
     width: 100%;
   }
-  .header .sidemenu nav a, .dropbtn-side {
+  .header .sidemenu nav a,
+  .dropbtn-side {
     font-size: 1rem;
   }
 
-  .header{
+  .header {
     background-color: #19232d;
+    padding: 0.4rem;
   }
 
+  .header .wrap {
+    padding: 0 120px 0 20px;
+  }
+
+  .header .logo {
+    width: 70px;
+  }
 
 }
 
-@media (min-width: 768px) {
-  @media (min-width: 768px) and (max-width: 991px) {
-    .header .sidemenu {
-      width: 70%;
-    }
-    .header .sidemenu nav a {
-      font-size: 1.2rem;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
+  .header .sidemenu {
+    width: 70%;
   }
+  .header .sidemenu nav a {
+    font-size: 1.2rem;
+  }
+
+
 }
 
 @media (max-width: 1199px) {

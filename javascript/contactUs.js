@@ -1,5 +1,8 @@
 console.log("Contact Us Sri Lanka Page JS file loaded")
 $("#contactUs-submit-button").click(() => {
+  
+  $("#contactUs-submit-button").val("Sending Request, Please Wait");
+  
   let name = $("#input-field-name").val();
   let email = $("#input-field-email").val();
   let phone = $("#input-field-phone").val();
@@ -28,8 +31,17 @@ $("#contactUs-submit-button").click(() => {
       console.log(res);
       if (res.status === 200) {
         console.log("Request Successfull");
-        $("contactUs-submit-button").css("background-color", "#007A52");
+        $("#contactUs-submit-button").css("background-color", "#007A52");
         $("#contactUs-submit-button").val("Request Sent ");
+
+        //lk-con-name lk-con-email lk-con-phone input-field-message
+        $(".lk-con-name").css("display", "none");
+        $(".lk-con-email").css("display", "none");
+        $(".lk-con-phone").css("display", "none");
+        $(".lk-con-Message").css("display", "none");
+
+        $(".title").text("Request successfull, Our Team will contact you shortly");
+
       } else {
         console.log("Request Failed");
         $("#contactUs-submit-button").val(

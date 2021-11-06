@@ -34,6 +34,16 @@ ul {
   padding: 0;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .header {
   position: relative;
   transition: all 0.7s;
@@ -581,7 +591,7 @@ hr {
 
 
 .songCard__content{
-    flex-grow: 2;
+    flex-grow: 1;
     align-self: flex-start;
     margin-top: 36px;
 }
@@ -589,8 +599,10 @@ hr {
 
 
 
-.songCard__titleSection{
-
+.songCard__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .songCard__memberSection{
 
@@ -630,7 +642,7 @@ hr {
 
   text-transform: capitalize;
 
-  color: #727E8B;
+  color: #ED1C24;
 }
 
 .songCard__contributer_text {
@@ -643,7 +655,7 @@ hr {
 
   text-transform: capitalize;
 
-  color: #727E8B;
+  color: white
 
 }
 
@@ -653,4 +665,48 @@ hr {
 
 .songCard__icon__image{
   height: "100px";
+}
+
+.loadMoreButton{
+  background-color: #ED1C24;
+
+  font-size: 16px;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-top : 1rem
+}
+
+.songCard__wdig_text--grey{
+  color: #727E8B;
+}
+
+@media screen and (max-width:1200px) {
+  
+  .songCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .songCard{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .songCard__content{
+    align-self: center;
+  }
+
+  .songCard__icon__image{
+    height: 100px;
+  }
+
+  .container{
+    max-width: 99vw;
+  }
+
+
+
 }

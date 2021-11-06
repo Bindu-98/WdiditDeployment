@@ -51,7 +51,8 @@ $("#copyrightLicenceRequest-submit-button").click(
                       console.log("Request Successfull")
                       $('#copyrightLicenceRequest-submit-button').css('background-color', '#007A52')
                       $('#copyrightLicenceRequest-submit-button').val('Request Sent ')
-      
+                      $('.form').css('display', 'none')
+                      $('.title').text("Request Has Been Sent , We will contact you shortly")
                   }else{
                       console.log("Request Failed" , res)
                       $('#copyrightLicenceRequest-submit-button').val("Couldnt Send Your Request Please contact (+94) 113 619 765 ")
