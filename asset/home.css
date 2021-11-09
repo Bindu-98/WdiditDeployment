@@ -214,7 +214,6 @@ input[type="reset"] {
 }
 
 .container {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -1023,6 +1022,8 @@ input[type="reset"] {
     text-align: center;
     height: 100%;
     width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     background-color: #0f1923;
     color: #fff;
     justify-content: center;
